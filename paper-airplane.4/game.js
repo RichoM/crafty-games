@@ -136,7 +136,9 @@ window.onload = (function() {
 		.setTop(40)
 		.bind("EnterFrame", function () {
 			this.right = camera.right - 40;
-			this.text(localStorage.maxScore4.toString());
+			if (localStorage.maxScore4) {
+				this.text(localStorage.maxScore4.toString());
+			}
 		});
 	camera.attach(maxScore);
 			

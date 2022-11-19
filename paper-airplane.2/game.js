@@ -124,7 +124,9 @@ window.onload = (function() {
 		.setTop(background.top + 40)
 		.bind("EnterFrame", function () {
 			this.right = background.right - 40;
-			this.text(localStorage.maxScore2.toString());
+			if (localStorage.maxScore2) {
+				this.text(localStorage.maxScore2.toString());
+			}
 		});
 	background.attach(maxScore);
 			
