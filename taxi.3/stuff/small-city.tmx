@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="33" height="33" tilewidth="100" tileheight="100">
+ <tileset firstgid="1" name="city-tileset" tilewidth="100" tileheight="100">
+  <image source="../imgs/city-tileset.PNG" width="400" height="400"/>
+ </tileset>
+ <layer name="Background" width="33" height="33">
+  <data encoding="base64" compression="zlib">
+   eJztlmsLgzAMRbt1D/do3f//teuggUvIZIQbZqEfLmo91RD0kJJSqj25pUBqP2a4ZnJ6Xe4djOQATteAdVeVYqwzOHz3CXJruRh5BHOfeo69nmvL2vLqkfMlkJN+yLns0VkCuK0asN6tZzO5b71b02899nIVOL0Heat3LA77gN/nveVs5BnMebzG5jxeY3Mer7G5ET1ZAjiP19jcSJ6sgZzHa2xuNE/OeXLOk3Oe3J8n5zwZ70npBXoNPYP/PZPTfvq3J636sDbL+2zuDUk3Kl4=
+  </data>
+ </layer>
+</map>

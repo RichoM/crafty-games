@@ -1,0 +1,62 @@
+<!DOCTYPE html5> 
+<html> 
+    <head> 		
+		<script type="text/javascript">
+
+function Now () {
+	return +new Date();
+}
+
+function TimeToRun (fn) {
+	var before = Now(),
+		result = fn(),
+		after = Now();
+	return {result: result, time: after - before};
+}
+
+var keys = {x1: 391.17970088477034, y1: 235.1978184408031, x2: 1391.1797008847702, y2: 1235.197818440803},
+	SPACE = " ";
+
+// String distinto
+console.log("String distinto: " + TimeToRun(function () {
+	for (var i = 0; i < 1000000; i++) {
+		var hash = keys.x1 + SPACE + keys.y1 + SPACE + keys.x2 + SPACE + keys.y2;
+		var hash2 = keys.x2 + SPACE + keys.y1 + SPACE + keys.x1 + SPACE + keys.y2;
+		hash === hash2;
+	}
+}).time);
+
+// String igual
+console.log("String igual: " + TimeToRun(function () {
+	for (var i = 0; i < 1000000; i++) {
+		var hash = keys.x1 + SPACE + keys.y1 + SPACE + keys.x2 + SPACE + keys.y2;
+		var hash2 = keys.x1 + SPACE + keys.y1 + SPACE + keys.x2 + SPACE + keys.y2;
+		hash === hash2;
+	}
+}).time);
+
+// Int distinto
+console.log("Int distinto: " + TimeToRun(function () {
+	for (var i = 0; i < 1000000; i++) {
+		var hash = keys.x1 + keys.y1 + keys.x2 + keys.y2;
+		var hash2 = keys.x2 + keys.y1 + keys.x1 + keys.y2;
+		hash === hash2;
+	}
+}).time);
+
+// Int igual
+console.log("Int igual: " + TimeToRun(function () {
+	for (var i = 0; i < 1000000; i++) {
+		var hash = keys.x1 + keys.y1 + keys.x2 + keys.y2;
+		var hash2 = keys.x1 + keys.y1 + keys.x2 + keys.y2;
+		hash === hash2;
+	}
+}).time);
+
+		
+		
+		</script>
+    </head> 
+    <body> 
+    </body> 
+</html>

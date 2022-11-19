@@ -1,0 +1,84 @@
+﻿<html> 
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Pequeños videojuegos en Javascript</title>
+		<meta name="author" content="Ricardo Moran">
+		<meta name="description" content="Les comparto a continuación estos pequeñísimos videojuegos que hice el verano pasado como una excusa para aprender Javascript. Considerando algunos proyectos más recientes en que me he visto involucrado, creo que cumplieron su función. Así que por favor no los juzguen como productos acabados sino más bien como meros ejercicios de programación.">
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="d3.js" type="text/javascript"></script>
+	</head> 
+    <body>
+		<div style="margin: 5px">
+			<h1>Pequeños videojuegos en Javascript</h1>
+			<p>Les comparto a continuación estos pequeñísimos videojuegos que hice el verano pasado como una excusa para aprender Javascript. Considerando algunos proyectos más recientes en que me he visto involucrado, creo que cumplieron su función. Así que por favor no los juzguen como productos acabados sino más bien como meros ejercicios de programación.</p>
+			<p>Para el programador interesado, todos están hechos con la librería <a href="http://craftyjs.com/" target="_blank">Crafty</a>, que es más que recomendable para cualquiera que quiera incursionar en esta divertida actividad.</p>
+		</div>
+		<hr>
+		<div id="games"></div>
+		<hr>
+		<div style="text-align: right">
+			<p>Ricardo Moran</p>
+			<div style="font-size: 14px; margin-bottom: 10px">				
+				<div>Facebook: <a href="https://www.facebook.com/ricardo.moran" target="_blank">ricardo.moran</a><div>
+				<div>Twitter: <a href="https://twitter.com/Richo_Moran" target="_blank">@Richo_Moran</a><div>
+			</div>
+		</div>
+		
+		<script src="games.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		var gameList = d3.select("#games");
+		GAMES.forEach(function (gameSpec, index) {
+			var isEven = index % 2 === 0;
+			var prefix = isEven ? "even" : "odd";
+			
+			var row = gameList.append("div")
+				.attr("class", prefix + "-container")
+				.append("table")
+				.append("tr");
+			
+			if (isEven) {
+				appendDescriptionColumn(gameSpec, row, prefix);
+				appendPicColumn(gameSpec, row, prefix);
+			} else {
+				appendPicColumn(gameSpec, row, prefix);
+				appendDescriptionColumn(gameSpec, row, prefix);
+			}
+				
+		});
+		
+		function appendDescriptionColumn (gameSpec, row, prefix) {
+		
+			var column = row.append("td")
+				.attr("class", prefix + "-column1");
+			column.append("h2")
+				.text(gameSpec.title);
+			column.append("hr");
+			column.append("h3")
+				.text("Descripción:");
+			gameSpec.description.forEach(function (p) {
+				column.append("p")
+					.text(p);
+			});
+			column.append("hr");
+			column.append("p")
+				.attr("class", "play-now")
+				.append("a")
+				.attr("href", gameSpec.url)
+				.attr("target", "_blank")
+				.text("Jugar ahora");
+		}
+		
+		function appendPicColumn(gameSpec, row, prefix) {
+			var column = row.append("td")
+				.attr("class", prefix + "-column2");
+			column.append("a")
+				.attr("href", gameSpec.url)
+				.attr("target", "_blank")
+				.append("img")
+				.attr("src", gameSpec.pic);
+		}
+		</script>
+    </body> 
+</html>

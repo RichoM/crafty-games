@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="100" tileheight="100">
+ <tileset firstgid="1" name="city-tileset" tilewidth="100" tileheight="100">
+  <image source="city-tileset/city-tileset.PNG" width="400" height="400"/>
+ </tileset>
+ <layer name="Background" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1blBQ1EAA8EP5jKn+6+W18UqmEDBNKC9Xdf1fvZ09nZ249QfZ39nX2cPzv189nn2cvbNuV/Pfs/uZz+cu/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4su/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4su/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4su/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4su/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4su/5L1o9l13/J+rHs+i9ZP5Zd/yXrx7Lrv2T9WHb9l6wfy67/kvVj2fVfsn4s+x9vwEwY
+  </data>
+ </layer>
+</map>

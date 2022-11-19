@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="grass-tiles-2-small" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/tileset/grass-tiles-2-small.png" width="384" height="192"/>
+ </tileset>
+ <tileset firstgid="73" name="tree2-final" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/tileset/tree2-final.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="137" name="qubodup-bush_0" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/tileset/qubodup-bush_0.png" trans="ffffff" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="138" name="littleshrooms_0" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/tileset/littleshrooms_0.png" width="32" height="40"/>
+ </tileset>
+ <tileset firstgid="139" name="qubodup-bush_berries_0" tilewidth="32" tileheight="32">
+  <image source="../../../../../Downloads/tileset/qubodup-bush_berries_0.png" width="32" height="32"/>
+ </tileset>
+ <layer name="Background" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxtlNtSwkAQRCdRyQUSlYSLyqvwB1BlCZThxc/kU5013WwnxUPXbrI7J3NNama1K3UlrgprjT2fU+zD+uKauxoocz2J/RT3yJ3ijOfKJmsBDrUTm5WwavCmsL+41iNWI7wCvj3AtrZhvCn4/EbnOt+JcQkmWYnEGXSCne67O34Ff1qILOY4+HBwzcBgHbQuYd0gtuBPCS5ZqYj3T/KO+RvXsgQvH/mldayES3YluSMrh38t9q+uT9cWq0prwVjVrwyMBrwMtSgs9l6BtbFhn5CprAJxsqZUhhywPiXeJ7DfiuZiX1jsDcbcyMp9izu0d/6V8rProt/f+vXtjt4hfRfs4Ms1KB/qNpc6w5qbdKQWnAI+teBn/Tv7sH7e1sKrbNgTutLvCRgLYZfg8f5Z/NI5rcS/A7Tpc/sfJ3MQ/GOvPVs/f0fXHtxfiZ9zsMbZo/jZIm72WvBzh+9fJNYE35hZnIPO4j+vAnci/ZKjF3YW/1/jmews/js6nK8k12Qupb/Iq5HHlfAq5EHrfrT4rwt3vmw4FyGPP/LNA+6esP8G5w83RiwF
+  </data>
+ </layer>
+ <layer name="Foreground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi8oBuIu8jUS64+SkEnA8TdAwk6B9j+gQYj3f/4QDUQ1wBxLRDXUcG8ZiBuAeJWIG4jQR+x+XMwxSWx+XowuRkZ0KJMBAAuygp7
+  </data>
+ </layer>
+ <layer name="Top" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztzDdyAlEARMG9Ht6DQHiPcMIjJRIkcGz6ABv9jKqdqk4meFGULFkUpUiTIUuOPAWKAb0SZSpUqVGnwUdAr0mLT9p06NKjH9AbMGTEmAlTZswDegu+WLJizYYt3wG9HXsOHDlx5sI1oPfDb8z/x39A78Y95n/wDOgle8+9AGfcFh0=
+  </data>
+ </layer>
+ <objectgroup name="Collision" width="20" height="20">
+  <object name="Trunk" x="392" y="393" width="108" height="54"/>
+ </objectgroup>
+</map>

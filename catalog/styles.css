@@ -1,0 +1,61 @@
+body {
+	width: 70%;
+	margin: auto;
+	font-family: Helvetica;
+}
+
+table {
+	width: 100%;
+}
+
+img {
+	width: 400px;
+}
+
+.even-container {
+	background-color: rgb(230, 240, 221);
+	margin: 5px;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+.even-column1 {
+	padding: 10px;
+	vertical-align: middle;
+	background-color: rgb(221, 230, 240);
+	border-radius: 10px;
+}
+
+.even-column2 {
+	width: 400px;
+	height: 303px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.odd-container {
+	background-color: rgb(221, 230, 240);
+	margin: 5px;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+.odd-column2 {
+	width: 400px;
+	height: 303px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.odd-column1 {
+	padding: 10px;
+	vertical-align: middle;
+	background-color: rgb(221, 240, 230);
+	border-radius: 10px;
+}
+
+.play-now {
+	text-align: right;
+}
